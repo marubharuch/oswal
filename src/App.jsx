@@ -10,6 +10,8 @@ import FamilyDirectory from './Pages/directory/FamilyDirectory';
 import TopNavbar from './components/navigation/TopNavbar';
 import BottomNavbar from './components/navigation/BottomNavbar';
 import GuestDashboard from './Pages/dashboard/GuestDashboard';
+// game
+import AdminDashboard from './game/pages/AdminDashboard';
 
 function App() {
   return (
@@ -27,6 +29,7 @@ function App() {
         <Route path="/" element={<GuestDashboard />} />
         <Route path="/signin" element={<SignIn />} />
         <Route path="/signup" element={<SignUp />} />
+        <Route path='/gameadm' element={<AdminDashboard />}/>
         <Route path="/profile" element={
           <PrivateRoute>
             <ProfilePage />
